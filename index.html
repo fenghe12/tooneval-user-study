@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>ToonEval User Study</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css?v=20260919">
+  <script src="./assets/lucide.min.js?v=0.468.0" defer></script>
+  <script src="./config.js" defer></script>
+  <script src="./app.js?v=20260919" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="brand">ToonEval</div>
+      <div class="study-title" data-i18n="studyTitle">Human Alignment Study</div>
+    </div>
+    <div class="topbar-actions">
+      <div class="language-control">
+        <span data-i18n="languageLabel">Language / 语言</span>
+        <div class="language-switch" role="group" aria-label="Language / 语言">
+          <button type="button" data-language="en" class="selected">English</button>
+          <button type="button" data-language="zh">中文</button>
+        </div>
+      </div>
+      <div class="progress-block" aria-label="Study progress">
+        <div class="progress-copy">
+          <span id="progressLabel">0 / 96</span>
+          <span id="saveState" data-i18n="notStarted">Not started</span>
+        </div>
+        <div class="progress-track"><div id="progressFill"></div></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="setupView" class="setup-view">
+      <div class="setup-copy">
+        <p class="eyebrow" data-i18n="anonymousEvaluation">Anonymous blinded evaluation</p>
+        <h1 data-i18n="setupHeading">Style consistency of generated talking-avatar videos</h1>
+        <p data-i18n="setupIntro">
+          You will compare 96 video pairs (left: ground truth, right: generated).
+          The generating method and all automatic scores are concealed. Pair order is randomized.
+        </p>
+        <div class="protocol-panel">
+          <h2 data-i18n="protocolHeading">Evaluation protocol</h2>
+          <ol>
+            <li data-i18n="protocolScope">Watch the GT (left) and generated (right) videos side by side. Both loop and play in sync.</li>
+            <li data-i18n="protocolWatch">Rate the overall quality of the generated video from 1 to 5.</li>
+            <li data-i18n="protocolNodes">Label the five dimensions S/D/C/T/M independently using Yes / No / U, based only on what you see.</li>
+            <li data-i18n="protocolGuide">Read the scoring guide below the videos for the exact meaning of each dimension and each anchor level.</li>
+            <li data-i18n="protocolSessions">You may complete the study in multiple sessions; progress is stored in this browser.</li>
+            <li data-i18n="protocolExport">After all pairs are complete, export the result JSON and return the file to the researcher.</li>
+          </ol>
+        </div>
+        <div class="setup-legend" aria-label="Verdict definitions">
+          <span class="legend-yes" data-i18n="yes">Yes</span><span data-i18n="yesDefinition">consistent with GT / stable</span>
+          <span class="legend-no" data-i18n="no">No</span><span data-i18n="noDefinition">visible inconsistency or violation</span>
+          <span class="legend-u" data-i18n="unobservableShort">U</span><span data-i18n="unobservableDefinition">insufficient visible evidence</span>
+        </div>
+      </div>
+      <form id="setupForm" class="setup-form">
+        <div class="study-facts">
+          <div><strong>96</strong><span data-i18n="videos">video pairs</span></div>
+          <div><strong>63</strong><span data-i18n="styles">art styles covered</span></div>
+          <div><strong>5</strong><span data-i18n="dimensions">evaluation dimensions</span></div>
+        </div>
+        <label class="consent-row">
+          <input id="consent" type="checkbox" required>
+          <span data-i18n="consent">I consent to the anonymous research use of these ratings.</span>
+        </label>
+        <button type="submit" class="primary-button">
+          <i data-lucide="play"></i>
+          <span id="startButtonLabel" data-i18n="startEvaluation">Start evaluation</span>
+        </button>
+      </form>
+    </section>
+
+    <section id="studyView" class="study-view" hidden>
+      <div class="video-column">
+        <div class="sample-meta">
+          <span id="sampleIndex" class="sample-index"></span>
+          <span class="blind-badge"><i data-lucide="eye-off"></i><span data-i18n="blinded">Method and automatic results hidden</span></span>
+        </div>
+        <div class="video-pair">
+          <figure class="video-shell gt">
+            <figcaption><span class="gt-badge">GT</span><span data-i18n="reference">Reference</span></figcaption>
+            <video id="gtVideo" controls loop muted playsinline preload="auto"></video>
+          </figure>
+          <figure class="video-shell gen">
+            <figcaption><span class="gen-badge" data-i18n="generated">Generated</span><span id="genLabel"></span></figcaption>
+            <video id="genVideo" controls loop muted playsinline preload="auto"></video>
+          </figure>
+        </div>
+        <div class="scenario-band">
+          <span data-i18n="scenario">Scenario</span>
+          <p id="samplePrompt"></p>
+        </div>
+      </div>
+
+      <form id="ratingForm" class="rating-column">
+        <div class="instruction-band">
+          <div class="instruction-heading">
+            <div class="instruction-title">
+              <i data-lucide="clipboard-check"></i>
+              <strong data-i18n="instructions">Evaluation instructions</strong>
+            </div>
+            <p data-i18n="instructionScope">
+              Compare the generated video (right) against the ground truth (left). Judge the five dimensions independently.
+            </p>
+          </div>
+          <div class="instruction-steps">
+            <span><b>1</b><span data-i18n="instructionWatch">Watch both videos at least once.</span></span>
+            <span><b>2</b><span data-i18n="instructionRate">Rate the generated video overall from 1 to 5.</span></span>
+            <span><b>3</b><span data-i18n="instructionLabel">Answer each of the five dimensions independently.</span></span>
+            <span><b>4</b><span data-i18n="instructionEvidence">Yes = consistent/stable; No = visible violation; U = cannot judge.</span></span>
+            <span><b>5</b><span data-i18n="instructionNoGuess">Do not guess. A visible violation must be No, not U.</span></span>
+          </div>
+          <button type="button" id="guideToggle" class="guide-toggle">
+            <i data-lucide="book-open"></i><span data-i18n="toggleGuide">Scoring guide</span>
+          </button>
+          <div id="dimensionGuide" class="dimension-guide" hidden></div>
+        </div>
+
+        <fieldset class="likert-panel">
+          <legend data-i18n="overallQuality">Overall quality of the generated video</legend>
+          <p data-i18n="likertPrompt">How well does the generated video preserve the reference in style, design, and motion?</p>
+          <div id="likertScale" class="likert-scale" role="radiogroup" aria-label="Overall quality"></div>
+          <div class="likert-anchors">
+            <span data-i18n="evidentlyBad">Broken / replaced</span>
+            <span data-i18n="excellent">Indistinguishable quality</span>
+          </div>
+        </fieldset>
+
+        <div class="rating-head">
+          <div>
+            <p class="eyebrow" data-i18n="toonEvalDimensions">ToonEval dimensions</p>
+            <h2 data-i18n="dimVerdicts">Dimension-wise judgments</h2>
+          </div>
+          <button id="replayButton" type="button" class="icon-button" data-i18n-title="replayVideo" title="Replay both videos">
+            <i data-lucide="rotate-ccw"></i>
+          </button>
+        </div>
+
+        <div id="nodeList" class="node-list"></div>
+
+        <div class="nav-row">
+          <button id="previousButton" type="button" class="secondary-button">
+            <i data-lucide="arrow-left"></i>
+            <span data-i18n="previous">Previous</span>
+          </button>
+          <button id="downloadProgressJson" type="button" class="secondary-button">
+            <i data-lucide="download"></i>
+            <span data-i18n="downloadProgressJson">Export current JSON</span>
+          </button>
+          <button id="nextButton" type="submit" class="primary-button">
+            <span data-i18n="saveContinue">Save and continue</span>
+            <i data-lucide="arrow-right"></i>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section id="completeView" class="complete-view" hidden>
+      <i data-lucide="check-circle-2" class="complete-icon"></i>
+      <h1 data-i18n="evaluationComplete">Evaluation complete</h1>
+      <p id="completionSummary"></p>
+      <div class="complete-actions">
+        <button id="downloadJson" type="button" class="primary-button">
+          <i data-lucide="download"></i>
+          <span data-i18n="downloadJson">Export result JSON</span>
+        </button>
+        <button id="submitResults" type="button" class="primary-button" hidden>
+          <i data-lucide="send"></i>
+          <span data-i18n="submitResponses">Submit responses</span>
+        </button>
+      </div>
+      <p id="submitStatus" class="submit-status"></p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,966 @@
+{
+ "schema_version": "tooneval-user-study-v1",
+ "trial_total": 96,
+ "trials": [
+  {
+   "trial_id": "N01-0011__float_iccv25",
+   "clip_id": "N01-0011",
+   "style_id": "N01",
+   "method": "float_iccv25",
+   "gt_video": "media/N01-0011.mp4",
+   "gen_video": "media/N01-0011.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N02-0012__hallolive",
+   "clip_id": "N02-0012",
+   "style_id": "N02",
+   "method": "hallolive",
+   "gt_video": "media/N02-0012.mp4",
+   "gen_video": "media/N02-0012.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N02-0025__hallolive",
+   "clip_id": "N02-0025",
+   "style_id": "N02",
+   "method": "hallolive",
+   "gt_video": "media/N02-0025.mp4",
+   "gen_video": "media/N02-0025.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N03-0001__real3dportrait",
+   "clip_id": "N03-0001",
+   "style_id": "N03",
+   "method": "real3dportrait",
+   "gt_video": "media/N03-0001.mp4",
+   "gen_video": "media/N03-0001.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N06-0001__anisora",
+   "clip_id": "N06-0001",
+   "style_id": "N06",
+   "method": "anisora",
+   "gt_video": "media/N06-0001.mp4",
+   "gen_video": "media/N06-0001.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N06-0015__anisora",
+   "clip_id": "N06-0015",
+   "style_id": "N06",
+   "method": "anisora",
+   "gt_video": "media/N06-0015.mp4",
+   "gen_video": "media/N06-0015.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N07-0004__liveavatar",
+   "clip_id": "N07-0004",
+   "style_id": "N07",
+   "method": "liveavatar",
+   "gt_video": "media/N07-0004.mp4",
+   "gen_video": "media/N07-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N08-0013__sadtalker",
+   "clip_id": "N08-0013",
+   "style_id": "N08",
+   "method": "sadtalker",
+   "gt_video": "media/N08-0013.mp4",
+   "gen_video": "media/N08-0013.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N09-0018__omniavatar",
+   "clip_id": "N09-0018",
+   "style_id": "N09",
+   "method": "omniavatar",
+   "gt_video": "media/N09-0018.mp4",
+   "gen_video": "media/N09-0018.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N09-0022__longcat",
+   "clip_id": "N09-0022",
+   "style_id": "N09",
+   "method": "longcat",
+   "gt_video": "media/N09-0022.mp4",
+   "gen_video": "media/N09-0022.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N13-0002__omniavatar",
+   "clip_id": "N13-0002",
+   "style_id": "N13",
+   "method": "omniavatar",
+   "gt_video": "media/N13-0002.mp4",
+   "gen_video": "media/N13-0002.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N13-0018__longcat",
+   "clip_id": "N13-0018",
+   "style_id": "N13",
+   "method": "longcat",
+   "gt_video": "media/N13-0018.mp4",
+   "gen_video": "media/N13-0018.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N14-0010__liveavatar",
+   "clip_id": "N14-0010",
+   "style_id": "N14",
+   "method": "liveavatar",
+   "gt_video": "media/N14-0010.mp4",
+   "gen_video": "media/N14-0010.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N15-0002__stableavatar",
+   "clip_id": "N15-0002",
+   "style_id": "N15",
+   "method": "stableavatar",
+   "gt_video": "media/N15-0002.mp4",
+   "gen_video": "media/N15-0002.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N15-0009__omniavatar",
+   "clip_id": "N15-0009",
+   "style_id": "N15",
+   "method": "omniavatar",
+   "gt_video": "media/N15-0009.mp4",
+   "gen_video": "media/N15-0009.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N17-0017__infinitetalk",
+   "clip_id": "N17-0017",
+   "style_id": "N17",
+   "method": "infinitetalk",
+   "gt_video": "media/N17-0017.mp4",
+   "gen_video": "media/N17-0017.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N18-0004__anisora",
+   "clip_id": "N18-0004",
+   "style_id": "N18",
+   "method": "anisora",
+   "gt_video": "media/N18-0004.mp4",
+   "gen_video": "media/N18-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N19-0001__anisora",
+   "clip_id": "N19-0001",
+   "style_id": "N19",
+   "method": "anisora",
+   "gt_video": "media/N19-0001.mp4",
+   "gen_video": "media/N19-0001.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N19-0010__stableavatar",
+   "clip_id": "N19-0010",
+   "style_id": "N19",
+   "method": "stableavatar",
+   "gt_video": "media/N19-0010.mp4",
+   "gen_video": "media/N19-0010.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N21-0001__stableavatar",
+   "clip_id": "N21-0001",
+   "style_id": "N21",
+   "method": "stableavatar",
+   "gt_video": "media/N21-0001.mp4",
+   "gen_video": "media/N21-0001.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N24-0001__infinitetalk",
+   "clip_id": "N24-0001",
+   "style_id": "N24",
+   "method": "infinitetalk",
+   "gt_video": "media/N24-0001.mp4",
+   "gen_video": "media/N24-0001.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N24-0002__stableavatar",
+   "clip_id": "N24-0002",
+   "style_id": "N24",
+   "method": "stableavatar",
+   "gt_video": "media/N24-0002.mp4",
+   "gen_video": "media/N24-0002.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N24-0005__longcat",
+   "clip_id": "N24-0005",
+   "style_id": "N24",
+   "method": "longcat",
+   "gt_video": "media/N24-0005.mp4",
+   "gen_video": "media/N24-0005.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N25-0002__liveavatar",
+   "clip_id": "N25-0002",
+   "style_id": "N25",
+   "method": "liveavatar",
+   "gt_video": "media/N25-0002.mp4",
+   "gen_video": "media/N25-0002.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N26-0001__anisora",
+   "clip_id": "N26-0001",
+   "style_id": "N26",
+   "method": "anisora",
+   "gt_video": "media/N26-0001.mp4",
+   "gen_video": "media/N26-0001.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N26-0009__liveavatar",
+   "clip_id": "N26-0009",
+   "style_id": "N26",
+   "method": "liveavatar",
+   "gt_video": "media/N26-0009.mp4",
+   "gen_video": "media/N26-0009.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N27-0002__infinitetalk",
+   "clip_id": "N27-0002",
+   "style_id": "N27",
+   "method": "infinitetalk",
+   "gt_video": "media/N27-0002.mp4",
+   "gen_video": "media/N27-0002.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N28-0005__anisora",
+   "clip_id": "N28-0005",
+   "style_id": "N28",
+   "method": "anisora",
+   "gt_video": "media/N28-0005.mp4",
+   "gen_video": "media/N28-0005.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N28-0007__omniavatar",
+   "clip_id": "N28-0007",
+   "style_id": "N28",
+   "method": "omniavatar",
+   "gt_video": "media/N28-0007.mp4",
+   "gen_video": "media/N28-0007.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N29-0004__stableavatar",
+   "clip_id": "N29-0004",
+   "style_id": "N29",
+   "method": "stableavatar",
+   "gt_video": "media/N29-0004.mp4",
+   "gen_video": "media/N29-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N29-0008__longcat",
+   "clip_id": "N29-0008",
+   "style_id": "N29",
+   "method": "longcat",
+   "gt_video": "media/N29-0008.mp4",
+   "gen_video": "media/N29-0008.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N30-0004__anisora",
+   "clip_id": "N30-0004",
+   "style_id": "N30",
+   "method": "anisora",
+   "gt_video": "media/N30-0004.mp4",
+   "gen_video": "media/N30-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N30-0008__anisora",
+   "clip_id": "N30-0008",
+   "style_id": "N30",
+   "method": "anisora",
+   "gt_video": "media/N30-0008.mp4",
+   "gen_video": "media/N30-0008.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "N31-0004__anisora",
+   "clip_id": "N31-0004",
+   "style_id": "N31",
+   "method": "anisora",
+   "gt_video": "media/N31-0004.mp4",
+   "gen_video": "media/N31-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S01-0008__anisora",
+   "clip_id": "S01-0008",
+   "style_id": "S01",
+   "method": "anisora",
+   "gt_video": "media/S01-0008.mp4",
+   "gen_video": "media/S01-0008.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S02-0005__anisora",
+   "clip_id": "S02-0005",
+   "style_id": "S02",
+   "method": "anisora",
+   "gt_video": "media/S02-0005.mp4",
+   "gen_video": "media/S02-0005.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S03-0003__longcat",
+   "clip_id": "S03-0003",
+   "style_id": "S03",
+   "method": "longcat",
+   "gt_video": "media/S03-0003.mp4",
+   "gen_video": "media/S03-0003.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S04-0001__anisora",
+   "clip_id": "S04-0001",
+   "style_id": "S04",
+   "method": "anisora",
+   "gt_video": "media/S04-0001.mp4",
+   "gen_video": "media/S04-0001.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S04-0003__omniavatar",
+   "clip_id": "S04-0003",
+   "style_id": "S04",
+   "method": "omniavatar",
+   "gt_video": "media/S04-0003.mp4",
+   "gen_video": "media/S04-0003.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S04-0006__liveavatar",
+   "clip_id": "S04-0006",
+   "style_id": "S04",
+   "method": "liveavatar",
+   "gt_video": "media/S04-0006.mp4",
+   "gen_video": "media/S04-0006.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S04-0008__omniavatar",
+   "clip_id": "S04-0008",
+   "style_id": "S04",
+   "method": "omniavatar",
+   "gt_video": "media/S04-0008.mp4",
+   "gen_video": "media/S04-0008.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S04-0009__anisora",
+   "clip_id": "S04-0009",
+   "style_id": "S04",
+   "method": "anisora",
+   "gt_video": "media/S04-0009.mp4",
+   "gen_video": "media/S04-0009.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S05-0001__anisora",
+   "clip_id": "S05-0001",
+   "style_id": "S05",
+   "method": "anisora",
+   "gt_video": "media/S05-0001.mp4",
+   "gen_video": "media/S05-0001.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S05-0009__liveavatar",
+   "clip_id": "S05-0009",
+   "style_id": "S05",
+   "method": "liveavatar",
+   "gt_video": "media/S05-0009.mp4",
+   "gen_video": "media/S05-0009.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S05-0013__longcat",
+   "clip_id": "S05-0013",
+   "style_id": "S05",
+   "method": "longcat",
+   "gt_video": "media/S05-0013.mp4",
+   "gen_video": "media/S05-0013.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S06-0001__anisora",
+   "clip_id": "S06-0001",
+   "style_id": "S06",
+   "method": "anisora",
+   "gt_video": "media/S06-0001.mp4",
+   "gen_video": "media/S06-0001.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S06-0016__anisora",
+   "clip_id": "S06-0016",
+   "style_id": "S06",
+   "method": "anisora",
+   "gt_video": "media/S06-0016.mp4",
+   "gen_video": "media/S06-0016.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S07-0003__anisora",
+   "clip_id": "S07-0003",
+   "style_id": "S07",
+   "method": "anisora",
+   "gt_video": "media/S07-0003.mp4",
+   "gen_video": "media/S07-0003.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S07-0016__stableavatar",
+   "clip_id": "S07-0016",
+   "style_id": "S07",
+   "method": "stableavatar",
+   "gt_video": "media/S07-0016.mp4",
+   "gen_video": "media/S07-0016.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S08-0003__infinitetalk",
+   "clip_id": "S08-0003",
+   "style_id": "S08",
+   "method": "infinitetalk",
+   "gt_video": "media/S08-0003.mp4",
+   "gen_video": "media/S08-0003.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S08-0007__anisora",
+   "clip_id": "S08-0007",
+   "style_id": "S08",
+   "method": "anisora",
+   "gt_video": "media/S08-0007.mp4",
+   "gen_video": "media/S08-0007.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S09-0004__longcat",
+   "clip_id": "S09-0004",
+   "style_id": "S09",
+   "method": "longcat",
+   "gt_video": "media/S09-0004.mp4",
+   "gen_video": "media/S09-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S09-0005__anisora",
+   "clip_id": "S09-0005",
+   "style_id": "S09",
+   "method": "anisora",
+   "gt_video": "media/S09-0005.mp4",
+   "gen_video": "media/S09-0005.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S10-0003__longcat",
+   "clip_id": "S10-0003",
+   "style_id": "S10",
+   "method": "longcat",
+   "gt_video": "media/S10-0003.mp4",
+   "gen_video": "media/S10-0003.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S10-0004__anisora",
+   "clip_id": "S10-0004",
+   "style_id": "S10",
+   "method": "anisora",
+   "gt_video": "media/S10-0004.mp4",
+   "gen_video": "media/S10-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S10-0007__anisora",
+   "clip_id": "S10-0007",
+   "style_id": "S10",
+   "method": "anisora",
+   "gt_video": "media/S10-0007.mp4",
+   "gen_video": "media/S10-0007.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S11-0008__anisora",
+   "clip_id": "S11-0008",
+   "style_id": "S11",
+   "method": "anisora",
+   "gt_video": "media/S11-0008.mp4",
+   "gen_video": "media/S11-0008.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S12-0011__longcat",
+   "clip_id": "S12-0011",
+   "style_id": "S12",
+   "method": "longcat",
+   "gt_video": "media/S12-0011.mp4",
+   "gen_video": "media/S12-0011.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S12-0014__hunyuan_avatar",
+   "clip_id": "S12-0014",
+   "style_id": "S12",
+   "method": "hunyuan_avatar",
+   "gt_video": "media/S12-0014.mp4",
+   "gen_video": "media/S12-0014.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S12-0015__longcat",
+   "clip_id": "S12-0015",
+   "style_id": "S12",
+   "method": "longcat",
+   "gt_video": "media/S12-0015.mp4",
+   "gen_video": "media/S12-0015.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S13-0002__hallolive",
+   "clip_id": "S13-0002",
+   "style_id": "S13",
+   "method": "hallolive",
+   "gt_video": "media/S13-0002.mp4",
+   "gen_video": "media/S13-0002.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S13-0007__hallolive",
+   "clip_id": "S13-0007",
+   "style_id": "S13",
+   "method": "hallolive",
+   "gt_video": "media/S13-0007.mp4",
+   "gen_video": "media/S13-0007.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S15-0008__longcat",
+   "clip_id": "S15-0008",
+   "style_id": "S15",
+   "method": "longcat",
+   "gt_video": "media/S15-0008.mp4",
+   "gen_video": "media/S15-0008.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S16-0001__anisora",
+   "clip_id": "S16-0001",
+   "style_id": "S16",
+   "method": "anisora",
+   "gt_video": "media/S16-0001.mp4",
+   "gen_video": "media/S16-0001.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S17-0002__stableavatar",
+   "clip_id": "S17-0002",
+   "style_id": "S17",
+   "method": "stableavatar",
+   "gt_video": "media/S17-0002.mp4",
+   "gen_video": "media/S17-0002.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S17-0004__longcat",
+   "clip_id": "S17-0004",
+   "style_id": "S17",
+   "method": "longcat",
+   "gt_video": "media/S17-0004.mp4",
+   "gen_video": "media/S17-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S18-0004__stableavatar",
+   "clip_id": "S18-0004",
+   "style_id": "S18",
+   "method": "stableavatar",
+   "gt_video": "media/S18-0004.mp4",
+   "gen_video": "media/S18-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S19-0004__stableavatar",
+   "clip_id": "S19-0004",
+   "style_id": "S19",
+   "method": "stableavatar",
+   "gt_video": "media/S19-0004.mp4",
+   "gen_video": "media/S19-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S19-0010__stableavatar",
+   "clip_id": "S19-0010",
+   "style_id": "S19",
+   "method": "stableavatar",
+   "gt_video": "media/S19-0010.mp4",
+   "gen_video": "media/S19-0010.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S20-0014__anisora",
+   "clip_id": "S20-0014",
+   "style_id": "S20",
+   "method": "anisora",
+   "gt_video": "media/S20-0014.mp4",
+   "gen_video": "media/S20-0014.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S20-0021__infinitetalk",
+   "clip_id": "S20-0021",
+   "style_id": "S20",
+   "method": "infinitetalk",
+   "gt_video": "media/S20-0021.mp4",
+   "gen_video": "media/S20-0021.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S20-0022__stableavatar",
+   "clip_id": "S20-0022",
+   "style_id": "S20",
+   "method": "stableavatar",
+   "gt_video": "media/S20-0022.mp4",
+   "gen_video": "media/S20-0022.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S21-0002__infinitetalk",
+   "clip_id": "S21-0002",
+   "style_id": "S21",
+   "method": "infinitetalk",
+   "gt_video": "media/S21-0002.mp4",
+   "gen_video": "media/S21-0002.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S21-0004__anisora",
+   "clip_id": "S21-0004",
+   "style_id": "S21",
+   "method": "anisora",
+   "gt_video": "media/S21-0004.mp4",
+   "gen_video": "media/S21-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S21-0009__liveavatar",
+   "clip_id": "S21-0009",
+   "style_id": "S21",
+   "method": "liveavatar",
+   "gt_video": "media/S21-0009.mp4",
+   "gen_video": "media/S21-0009.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S22-0006__hunyuan_avatar",
+   "clip_id": "S22-0006",
+   "style_id": "S22",
+   "method": "hunyuan_avatar",
+   "gt_video": "media/S22-0006.mp4",
+   "gen_video": "media/S22-0006.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S23-0005__liveavatar",
+   "clip_id": "S23-0005",
+   "style_id": "S23",
+   "method": "liveavatar",
+   "gt_video": "media/S23-0005.mp4",
+   "gen_video": "media/S23-0005.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S24-0001__hunyuan_avatar",
+   "clip_id": "S24-0001",
+   "style_id": "S24",
+   "method": "hunyuan_avatar",
+   "gt_video": "media/S24-0001.mp4",
+   "gen_video": "media/S24-0001.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S24-0003__omniavatar",
+   "clip_id": "S24-0003",
+   "style_id": "S24",
+   "method": "omniavatar",
+   "gt_video": "media/S24-0003.mp4",
+   "gen_video": "media/S24-0003.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S24-0010__anisora",
+   "clip_id": "S24-0010",
+   "style_id": "S24",
+   "method": "anisora",
+   "gt_video": "media/S24-0010.mp4",
+   "gen_video": "media/S24-0010.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S26-0004__omniavatar",
+   "clip_id": "S26-0004",
+   "style_id": "S26",
+   "method": "omniavatar",
+   "gt_video": "media/S26-0004.mp4",
+   "gen_video": "media/S26-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S26-0007__stableavatar",
+   "clip_id": "S26-0007",
+   "style_id": "S26",
+   "method": "stableavatar",
+   "gt_video": "media/S26-0007.mp4",
+   "gen_video": "media/S26-0007.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S26-0010__infinitetalk",
+   "clip_id": "S26-0010",
+   "style_id": "S26",
+   "method": "infinitetalk",
+   "gt_video": "media/S26-0010.mp4",
+   "gen_video": "media/S26-0010.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S27-0010__wan22_s2v",
+   "clip_id": "S27-0010",
+   "style_id": "S27",
+   "method": "wan22_s2v",
+   "gt_video": "media/S27-0010.mp4",
+   "gen_video": "media/S27-0010.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S28-0013__sonic_cvpr25",
+   "clip_id": "S28-0013",
+   "style_id": "S28",
+   "method": "sonic_cvpr25",
+   "gt_video": "media/S28-0013.mp4",
+   "gen_video": "media/S28-0013.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S29-0004__echomimicv3_flash",
+   "clip_id": "S29-0004",
+   "style_id": "S29",
+   "method": "echomimicv3_flash",
+   "gt_video": "media/S29-0004.mp4",
+   "gen_video": "media/S29-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S30-0003__echomimicv3_flash",
+   "clip_id": "S30-0003",
+   "style_id": "S30",
+   "method": "echomimicv3_flash",
+   "gt_video": "media/S30-0003.mp4",
+   "gen_video": "media/S30-0003.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S31-0004__longcat",
+   "clip_id": "S31-0004",
+   "style_id": "S31",
+   "method": "longcat",
+   "gt_video": "media/S31-0004.mp4",
+   "gen_video": "media/S31-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S31-0006__wan22_s2v",
+   "clip_id": "S31-0006",
+   "style_id": "S31",
+   "method": "wan22_s2v",
+   "gt_video": "media/S31-0006.mp4",
+   "gen_video": "media/S31-0006.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S32-0004__hunyuan_avatar",
+   "clip_id": "S32-0004",
+   "style_id": "S32",
+   "method": "hunyuan_avatar",
+   "gt_video": "media/S32-0004.mp4",
+   "gen_video": "media/S32-0004.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S33-0009__hallo4",
+   "clip_id": "S33-0009",
+   "style_id": "S33",
+   "method": "hallo4",
+   "gt_video": "media/S33-0009.mp4",
+   "gen_video": "media/S33-0009.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S34-0007__hallo4",
+   "clip_id": "S34-0007",
+   "style_id": "S34",
+   "method": "hallo4",
+   "gt_video": "media/S34-0007.mp4",
+   "gen_video": "media/S34-0007.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S34-0024__sonic_cvpr25",
+   "clip_id": "S34-0024",
+   "style_id": "S34",
+   "method": "sonic_cvpr25",
+   "gt_video": "media/S34-0024.mp4",
+   "gen_video": "media/S34-0024.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S35-0005__musetalk_15",
+   "clip_id": "S35-0005",
+   "style_id": "S35",
+   "method": "musetalk_15",
+   "gt_video": "media/S35-0005.mp4",
+   "gen_video": "media/S35-0005.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S36-0007__infinitetalk",
+   "clip_id": "S36-0007",
+   "style_id": "S36",
+   "method": "infinitetalk",
+   "gt_video": "media/S36-0007.mp4",
+   "gen_video": "media/S36-0007.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  },
+  {
+   "trial_id": "S37-0017__edtalk",
+   "clip_id": "S37-0017",
+   "style_id": "S37",
+   "method": "edtalk",
+   "gt_video": "media/S37-0017.mp4",
+   "gen_video": "media/S37-0017.mp4",
+   "gt_duration": null,
+   "gen_duration": null
+  }
+ ]
+}
