@@ -220,7 +220,7 @@ const state = {
   completedAt: null,
   consentedAt: null,
   lastSavedAt: null,
-  language: localStorage.getItem("tooneval-user-study:language") || "zh",
+  language: localStorage.getItem("tooneval-alignment:language") || "zh",
   guideOpen: false,
   syncToken: 0,
 };
@@ -271,7 +271,7 @@ function randomizedAssignment(trials, sessionId) {
 }
 
 function recordKey() {
-  return `tooneval-user-study:v1:${state.sessionId}`;
+  return `tooneval-alignment:v1:${state.sessionId}`;
 }
 
 function savedRecord() {
@@ -329,7 +329,7 @@ function restoreSavedRecord(saved) {
   state.lastSavedAt = saved.lastSavedAt || null;
   if (saved.language === "en" || saved.language === "zh") {
     state.language = saved.language;
-    localStorage.setItem("tooneval-user-study:language", state.language);
+    localStorage.setItem("tooneval-alignment:language", state.language);
   }
   return true;
 }
@@ -664,8 +664,8 @@ function applyTranslations() {
 
 async function initialize() {
   state.sessionId =
-    localStorage.getItem("tooneval-user-study:session-id") || anonymousCode();
-  localStorage.setItem("tooneval-user-study:session-id", state.sessionId);
+    localStorage.getItem("tooneval-alignment:session-id") || anonymousCode();
+  localStorage.setItem("tooneval-alignment:session-id", state.sessionId);
 
   const manifestPath = window.TOONEVAL_CONFIG?.trialManifest || "./data/trials.json";
   const response = await fetch(manifestPath);
@@ -677,7 +677,7 @@ async function initialize() {
   document.querySelectorAll("[data-language]").forEach((button) => {
     button.addEventListener("click", () => {
       state.language = button.dataset.language;
-      localStorage.setItem("tooneval-user-study:language", state.language);
+      localStorage.setItem("tooneval-alignment:language", state.language);
       applyTranslations();
       if (!$("#studyView").hidden && state.assignment.length) {
         renderLikert();
